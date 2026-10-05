@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "name": "PM-KISAN",
+    "occupation": "Farmer",
+    "min_age": 18,
+    "max_age": 100,
+    "income_limit": 10000000,
+    "state": "All",
+    "category": "All",
+    "benefit": "₹6000 per year"
+  },
+  {
+    "id": 2,
+    "name": "PM YASASVI Scholarship",
+    "occupation": "Student",
+    "min_age": 18,
+    "max_age": 25,
+    "income_limit": 250000,
+    "state": "All",
+    "category": "OBC",
+    "benefit": "Scholarship"
+  },
+  {
+    "id": 3,
+    "name": "National Scholarship",
+    "occupation": "Student",
+    "min_age": 18,
+    "max_age": 30,
+    "income_limit": 300000,
+    "state": "All",
+    "category": "All",
+    "benefit": "Financial Assistance"
+  }
+]

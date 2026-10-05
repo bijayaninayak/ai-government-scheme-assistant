@@ -1,0 +1,20 @@
+# Environment variables
+.env
+.env.*
+
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# Next.js
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+
+# VS Code
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
