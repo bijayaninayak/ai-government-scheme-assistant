@@ -29,6 +29,7 @@ export default function Home() {
   const [schemes, setSchemes] = useState<Scheme[]>([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
+  const [hasChecked, setHasChecked] = useState(false);
 
   // Check whether user is logged in
   useEffect(() => {
@@ -52,6 +53,7 @@ export default function Home() {
   const checkEligibility = async () => {
     setError("");
     setSchemes([]);
+    setHasChecked(false);
 
     if (!age || !income || !occupation || !state || !category) {
       setError("Please fill in all fields.");
@@ -85,6 +87,7 @@ export default function Home() {
       const data = await response.json();
 
       setSchemes(data.eligible_schemes);
+      setHasChecked(true);
     } catch (err) {
       console.error(err);
       setError("Unable to connect to the backend.");
@@ -374,13 +377,9 @@ export default function Home() {
 
         {/* No results */}
         {!loading &&
+          hasChecked &&
           schemes.length === 0 &&
-          !error &&
-          age &&
-          income &&
-          occupation &&
-          state &&
-          category && (
+          !error && (
 
             <div className="mt-8 rounded-xl bg-yellow-50 p-5 text-center">
 
