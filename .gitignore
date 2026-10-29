@@ -7,10 +7,6 @@ venv/
 __pycache__/
 *.pyc
 
-# Next.js
-frontend/node_modules/
-frontend/.next/
-frontend/out/
 
 # VS Code
 .vscode/
@@ -29,3 +25,6 @@ venv/
 
 # Dependencies
 node_modules/
+
+figma-frontend/node_modules/
+figma-frontend/dist/
