@@ -1,15 +1,25 @@
 import os
 from contextlib import asynccontextmanager
 
-from fastapi import FastAPI, HTTPException, Depends
+from fastapi import BackgroundTasks, FastAPI, HTTPException, Depends
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
 
-from backend.schemas import UserProfile, Scheme, UserRegister, UserLogin
-from backend.eligibility import check_eligibility
+from backend.schemas import (
+    UserProfile,
+    Scheme,
+    UserRegister,
+    UserLogin,
+    ForgotPasswordRequest,
+    ResetPasswordRequest,
+)
+from backend.eligibility import check_eligibility_full
+from pymongo.errors import DuplicateKeyError
+
 from backend.crud import (
     get_all_schemes,
+    get_scheme,
     create_scheme,
     update_scheme,
     delete_scheme
@@ -20,8 +30,11 @@ from backend.auth import (
     ensure_indexes,
     create_access_token,
     get_user_from_token,
+    create_password_reset,
+    reset_password,
     PasswordTooLongError,
 )
+from backend.email_sender import send_reset_email
 from backend.database import user_collection, client
 
 
@@ -89,6 +102,25 @@ def get_current_user(
     return user
 
 
+# Dependency for admin-only routes. Admins are the emails listed in
+# ADMIN_EMAILS in the .env file (comma separated). If it is empty,
+# nobody is an admin and the scheme edit routes stay locked.
+def get_current_admin(current_user: dict = Depends(get_current_user)):
+    admin_emails = {
+        email.strip().lower()
+        for email in os.getenv("ADMIN_EMAILS", "").split(",")
+        if email.strip()
+    }
+
+    if current_user["email"].lower() not in admin_emails:
+        raise HTTPException(
+            status_code=403,
+            detail="Admin access required"
+        )
+
+    return current_user
+
+
 # Home API
 @app.get("/")
 def home():
@@ -125,24 +157,46 @@ def me(current_user: dict = Depends(get_current_user)):
 # Check Eligibility
 @app.post("/check-eligibility")
 def check(user: UserProfile):
-    schemes = check_eligibility(user)
+    schemes, not_eligible = check_eligibility_full(user)
 
     return {
         "total_schemes": len(schemes),
-        "eligible_schemes": schemes
+        "eligible_schemes": schemes,
+        # Schemes that do not match, each with the reasons why
+        "not_eligible_schemes": not_eligible
     }
 
 
-# Get All Schemes
+# Get All Schemes (optional ?q=words and ?sector=Education)
 @app.get("/schemes")
-def all_schemes():
-    return get_all_schemes()
+def all_schemes(q: str | None = None, sector: str | None = None):
+    return get_all_schemes(q=q, sector=sector)
 
 
-# Create Scheme
+# Get one scheme
+@app.get("/schemes/{scheme_id}")
+def one_scheme(scheme_id: int):
+    scheme = get_scheme(scheme_id)
+
+    if scheme is None:
+        raise HTTPException(status_code=404, detail="Scheme not found")
+
+    return scheme
+
+
+# Create Scheme (admin only)
 @app.post("/schemes")
-def add_scheme(scheme: Scheme):
-    new_id = create_scheme(scheme.model_dump())
+def add_scheme(
+    scheme: Scheme,
+    admin: dict = Depends(get_current_admin)
+):
+    try:
+        new_id = create_scheme(scheme.model_dump())
+    except DuplicateKeyError:
+        raise HTTPException(
+            status_code=409,
+            detail="A scheme with this id already exists"
+        )
 
     return {
         "message": "Scheme added successfully",
@@ -150,9 +204,13 @@ def add_scheme(scheme: Scheme):
     }
 
 
-# Update Scheme
+# Update Scheme (admin only)
 @app.put("/schemes/{scheme_id}")
-def edit_scheme(scheme_id: int, scheme: Scheme):
+def edit_scheme(
+    scheme_id: int,
+    scheme: Scheme,
+    admin: dict = Depends(get_current_admin)
+):
     update_scheme(
         scheme_id,
         scheme.model_dump()
@@ -163,9 +221,12 @@ def edit_scheme(scheme_id: int, scheme: Scheme):
     }
 
 
-# Delete Scheme
+# Delete Scheme (admin only)
 @app.delete("/schemes/{scheme_id}")
-def remove_scheme(scheme_id: int):
+def remove_scheme(
+    scheme_id: int,
+    admin: dict = Depends(get_current_admin)
+):
     delete_scheme(scheme_id)
 
     return {
@@ -230,3 +291,42 @@ def login(user: UserLogin):
         "token_type": "bearer",
         "user": result
     }
+
+
+# Forgot password: always gives the same answer, whether or not the email
+# has an account, so nobody can use this to find out who is registered.
+@app.post("/forgot-password")
+def forgot_password(
+    request: ForgotPasswordRequest,
+    background_tasks: BackgroundTasks
+):
+    created = create_password_reset(request.email)
+
+    if created is not None:
+        name, email, token = created
+        # Sent after the answer, so the response time looks the same too.
+        background_tasks.add_task(send_reset_email, email, name, token)
+
+    return {
+        "message": "If an account exists for that email, we have sent a link to reset the password."
+    }
+
+
+# Reset password with the one-time token from the email
+@app.post("/reset-password")
+def reset_password_route(request: ResetPasswordRequest):
+    try:
+        done = reset_password(request.token, request.password)
+    except PasswordTooLongError:
+        raise HTTPException(
+            status_code=400,
+            detail="Password is too long (max 72 bytes)"
+        )
+
+    if not done:
+        raise HTTPException(
+            status_code=400,
+            detail="This reset link is invalid or has expired. Please request a new one."
+        )
+
+    return {"message": "Password updated. You can now log in."}
