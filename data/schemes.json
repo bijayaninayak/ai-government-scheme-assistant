@@ -1,35 +1,1078 @@
 [
   {
     "id": 1,
-    "name": "PM-KISAN",
-    "occupation": "Farmer",
-    "min_age": 18,
-    "max_age": 100,
-    "income_limit": 10000000,
-    "state": "All",
-    "category": "All",
-    "benefit": "₹6000 per year"
+    "name": "PM-KISAN Samman Nidhi",
+    "department": "Ministry of Agriculture & Farmers Welfare",
+    "level": "Central",
+    "sector": "Agriculture",
+    "description": "Income support to eligible landholding farmer families, paid in three equal instalments each year.",
+    "benefit": "₹6,000 per year per family (3 instalments of ₹2,000)",
+    "occupation": [
+      "Farmer"
+    ],
+    "min_age": null,
+    "max_age": null,
+    "income_limit": null,
+    "state": [
+      "All"
+    ],
+    "category": [
+      "All"
+    ],
+    "eligibility_criteria": [
+      "Landholding farmer family with cultivable land in the farmer's own name"
+    ],
+    "other_requirements": [
+      "The cultivable land must be recorded in your name. Tenant farmers, and people farming family land that has not been transferred to their name, do not qualify.",
+      "Not an institutional landholder.",
+      "No family member who holds or has held a constitutional post, or who is or was a minister, MP, MLA/MLC, mayor or district panchayat chairperson.",
+      "No family member who is serving or retired in a central or state government office, public sector enterprise or regular local body post (Multi-Tasking Staff and Class IV/Group D employees are excepted).",
+      "No retired pensioner in the family receiving a pension of ₹10,000 or more (same exception).",
+      "No family member who paid income tax in the last assessment year.",
+      "No family member who is a registered doctor, engineer, lawyer, chartered accountant or architect practising the profession."
+    ],
+    "documents": [],
+    "how_to_apply": [],
+    "notes": [
+      "This summary comes from the official FAQ dated 23 November 2021. Amounts and rules may have changed, so confirm them on the official PM-KISAN portal."
+    ],
+    "official_url": "https://pmkisan.gov.in/",
+    "source_url": "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2021/nov/doc2021112361.pdf",
+    "source_name": "PM-KISAN FAQs, Ministry of Agriculture & Farmers Welfare (via PIB), 23 Nov 2021",
+    "last_verified": "2026-10-28"
   },
   {
     "id": 2,
-    "name": "PM YASASVI Scholarship",
-    "occupation": "Student",
+    "name": "Pradhan Mantri Suraksha Bima Yojana (PMSBY)",
+    "department": "Ministry of Finance",
+    "level": "Central",
+    "sector": "Insurance & Social Security",
+    "description": "Accident insurance for bank and post office account holders, with an annual premium of ₹20.",
+    "benefit": "₹2 lakh for accidental death or total loss of use; ₹1 lakh for partial loss (loss of sight in one eye or use of one hand or foot)",
+    "occupation": [
+      "All"
+    ],
     "min_age": 18,
-    "max_age": 25,
-    "income_limit": 250000,
-    "state": "All",
-    "category": "OBC",
-    "benefit": "Scholarship"
+    "max_age": 70,
+    "income_limit": null,
+    "state": [
+      "All"
+    ],
+    "category": [
+      "All"
+    ],
+    "eligibility_criteria": [
+      "Aged 18 to 70 years",
+      "Holds a savings bank or post office savings account",
+      "Agrees to auto-debit of the ₹20 annual premium"
+    ],
+    "other_requirements": [
+      "You need a savings bank or post office savings account and must agree to the auto-debit of ₹20 per year."
+    ],
+    "documents": [],
+    "how_to_apply": [
+      "Visit your bank branch, business correspondent point or the bank's website (or your post office, for a post office savings account).",
+      "Fill in the enrolment form. Forms in Hindi, English and regional languages are available at jansuraksha.gov.in."
+    ],
+    "notes": [],
+    "official_url": "https://jansuraksha.gov.in/",
+    "source_url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2259251&reg=3&lang=1",
+    "source_name": "PIB release, 9 May 2026, and Ministry of Finance, 9 May 2023",
+    "last_verified": "2026-10-28"
   },
   {
     "id": 3,
-    "name": "National Scholarship",
-    "occupation": "Student",
+    "name": "Pradhan Mantri Jeevan Jyoti Bima Yojana (PMJJBY)",
+    "department": "Ministry of Finance",
+    "level": "Central",
+    "sector": "Insurance & Social Security",
+    "description": "One-year renewable life insurance for bank and post office account holders.",
+    "benefit": "₹2 lakh on death from any cause; premium ₹436 per year",
+    "occupation": [
+      "All"
+    ],
     "min_age": 18,
-    "max_age": 30,
-    "income_limit": 300000,
-    "state": "All",
-    "category": "All",
-    "benefit": "Financial Assistance"
+    "max_age": 50,
+    "income_limit": null,
+    "state": [
+      "All"
+    ],
+    "category": [
+      "All"
+    ],
+    "eligibility_criteria": [
+      "Aged 18 to 50 years",
+      "Holds a bank or post office account",
+      "Agrees to auto-debit of the ₹436 annual premium"
+    ],
+    "other_requirements": [
+      "You need a bank or post office account and must agree to the auto-debit of ₹436 per year."
+    ],
+    "documents": [],
+    "how_to_apply": [
+      "Enrolment is linked to your bank account and the premium is paid by auto-debit from it. Ask your bank or post office to enrol you."
+    ],
+    "notes": [
+      "Cover runs from 1 June to 31 May and renews every year. Joining mid-year uses a pro-rata premium."
+    ],
+    "official_url": "https://jansuraksha.gov.in/",
+    "source_url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2259251&reg=3&lang=1",
+    "source_name": "Press Information Bureau, Government of India (Ministry of Finance)",
+    "last_verified": "2026-10-28"
+  },
+  {
+    "id": 4,
+    "name": "Atal Pension Yojana (APY)",
+    "department": "Ministry of Finance",
+    "level": "Central",
+    "sector": "Pension & Social Security",
+    "description": "A guaranteed minimum monthly pension after age 60 for bank account holders, aimed at people in the unorganised sector.",
+    "benefit": "Guaranteed monthly pension of ₹1,000 to ₹5,000 after age 60, depending on the amount you choose",
+    "occupation": [
+      "All"
+    ],
+    "min_age": 18,
+    "max_age": 40,
+    "income_limit": null,
+    "state": [
+      "All"
+    ],
+    "category": [
+      "All"
+    ],
+    "eligibility_criteria": [
+      "Aged 18 to 40 years",
+      "Holds a bank account",
+      "Not an income tax payer"
+    ],
+    "other_requirements": [
+      "You must not be an income tax payer.",
+      "You need a bank account.",
+      "MyGov states that you should not be a member of a statutory social security scheme."
+    ],
+    "documents": [],
+    "how_to_apply": [
+      "Apply online or offline: download the form from the official APY website, or get it from a registered bank."
+    ],
+    "notes": [
+      "Your contribution depends on the pension amount you choose and your age when you join. It can be paid monthly, quarterly or half-yearly. Ask your bank for the exact amount."
+    ],
+    "official_url": "https://transformingindia.mygov.in/scheme/atal-pension-yojana/",
+    "source_url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2259251&reg=3&lang=1",
+    "source_name": "PIB release, 9 May 2026, and MyGov scheme page",
+    "last_verified": "2026-10-28"
+  },
+  {
+    "id": 5,
+    "name": "Ayushman Vay Vandana (AB PM-JAY for senior citizens)",
+    "department": "Ministry of Health & Family Welfare",
+    "level": "Central",
+    "sector": "Health",
+    "description": "Health insurance cover under Ayushman Bharat PM-JAY for all senior citizens aged 70 and above, irrespective of income.",
+    "benefit": "Health cover of up to ₹5 lakh per year on a family basis. Senior citizens in families already covered get an additional top-up of up to ₹5 lakh per year for themselves.",
+    "occupation": [
+      "All"
+    ],
+    "min_age": 70,
+    "max_age": null,
+    "income_limit": null,
+    "state": [
+      "All"
+    ],
+    "category": [
+      "All"
+    ],
+    "eligibility_criteria": [
+      "Aged 70 years or above",
+      "Open to all senior citizens irrespective of socio-economic status"
+    ],
+    "other_requirements": [],
+    "documents": [],
+    "how_to_apply": [],
+    "notes": [
+      "This summary is based on the Cabinet decision of 11 September 2024. Check the official AB PM-JAY portal for current enrolment steps and any state-specific rules.",
+      "Seniors already covered by CGHS, ECHS or Ayushman CAPF can keep that scheme or choose AB PM-JAY. Seniors with private health insurance or ESI are eligible for AB PM-JAY benefits."
+    ],
+    "official_url": "https://pmjay.gov.in/",
+    "source_url": "https://www.pib.gov.in/Pressreleaseshare.aspx?PRID=2053883&reg=48&lang=2",
+    "source_name": "PIB, Ministry of Health & Family Welfare, 11 Sep 2024",
+    "last_verified": "2026-10-28"
+  },
+  {
+    "id": 6,
+    "name": "National Means-cum-Merit Scholarship Scheme (NMMSS)",
+    "department": "Department of School Education & Literacy, Ministry of Education",
+    "level": "Central",
+    "sector": "Education",
+    "description": "Scholarships for selected Class IX students from families with limited income, renewable through Class XII.",
+    "benefit": "₹12,000 per year",
+    "occupation": [
+      "Student"
+    ],
+    "min_age": null,
+    "max_age": null,
+    "income_limit": 350000,
+    "state": [
+      "All"
+    ],
+    "category": [
+      "All"
+    ],
+    "eligibility_criteria": [
+      "Parental income from all sources not more than ₹3,50,000 per year",
+      "Fresh awards are given in Class IX; renewal continues in Classes X to XII",
+      "Regular student of a Government, Government-aided or local body school",
+      "At least 55% in Class VII (5% relaxation for SC/ST students) to appear in the selection test",
+      "At least 55% in Class VIII at the time of selection (5% relaxation for SC/ST students)",
+      "Pass both the Mental Ability Test and the Scholastic Aptitude Test with at least 40% in aggregate (32% for SC/ST students)"
+    ],
+    "other_requirements": [
+      "You must be studying in Class IX for a fresh award.",
+      "You must be a regular student of a Government, Government-aided or local body school. Students of NVS, KVS and residential schools are not eligible.",
+      "You need at least 55% in Class VII (5% relaxation for SC/ST students).",
+      "You also need at least 55% in Class VIII at the time of selection (5% relaxation for SC/ST students).",
+      "You must pass the selection test (Mental Ability Test and Scholastic Aptitude Test) with at least 40% in aggregate (32% for SC/ST students)."
+    ],
+    "documents": [],
+    "how_to_apply": [
+      "Applications and scheme details are handled through the National Scholarship Portal (NSP)."
+    ],
+    "notes": [
+      "Renewal needs at least 60% in Class X (5% relaxation for SC/ST) and promotion at the first attempt from Class IX to X and from XI to XII."
+    ],
+    "official_url": "https://scholarships.gov.in/",
+    "source_url": "https://dsel.education.gov.in/scheme/nmmss",
+    "source_name": "Department of School Education & Literacy, Ministry of Education",
+    "last_verified": "2026-10-27"
+  },
+  {
+    "id": 7,
+    "name": "PM YASASVI - Top Class School Education for OBC, EBC and DNT students",
+    "department": "Department of Social Justice & Empowerment, Ministry of Social Justice and Empowerment",
+    "level": "Central",
+    "sector": "Education",
+    "description": "Scholarship covering school and hostel fees for meritorious OBC, EBC and DNT students studying in Class 9 or 11 at notified top class schools.",
+    "benefit": "Up to ₹75,000 per year (Classes 9 and 10) or up to ₹1,25,000 per year (Classes 11 and 12), covering school and hostel fees on an actual basis",
+    "occupation": [
+      "Student"
+    ],
+    "min_age": null,
+    "max_age": null,
+    "income_limit": 250000,
+    "state": [
+      "All"
+    ],
+    "category": [
+      "OBC",
+      "EBC",
+      "DNT"
+    ],
+    "eligibility_criteria": [
+      "Belongs to the OBC, EBC or DNT category",
+      "Parents' or guardians' annual income not more than ₹2.50 lakh",
+      "Studying in Class 9 or Class 11 in a Top Class School",
+      "Scored 60% or above in Class 8 or Class 10"
+    ],
+    "other_requirements": [
+      "You must be studying in Class 9 or Class 11 in a notified Top Class School.",
+      "You need 60% or above in Class 8 or Class 10. Selection is merit-based.",
+      "The scheme also covers EBC and DNT students. This form only has an OBC option, so EBC and DNT applicants should check eligibility on the portal."
+    ],
+    "documents": [],
+    "how_to_apply": [
+      "Apply through the National Scholarship Portal (NSP). Selection is merit-based, using Class 8 and Class 10 marks.",
+      "The money is paid directly to the student's Aadhaar-seeded bank account (direct benefit transfer)."
+    ],
+    "notes": [
+      "This summary comes from the 2023-24 notice, when registration closed on 31 December 2023. Check the National Scholarship Portal for the current year's dates and rules."
+    ],
+    "official_url": "https://scholarships.gov.in/",
+    "source_url": "https://socialjustice.gov.in/writereaddata/UploadFile/90711699348458.pdf",
+    "source_name": "Department of Social Justice & Empowerment, Ministry of Social Justice and Empowerment (2023-24 notice)",
+    "last_verified": "2026-10-27"
+  },
+  {
+    "id": 8,
+    "name": "Post-Matric Scholarship for SC and ST students",
+    "department": "Government of India (central scheme)",
+    "level": "Central",
+    "sector": "Education",
+    "description": "Maintenance allowance and fee reimbursement for Scheduled Caste and Scheduled Tribe students pursuing recognised post-matric (post-secondary) courses.",
+    "benefit": "Monthly maintenance allowance (the rate depends on your course group and whether you live in a hostel) plus reimbursement of compulsory non-refundable fees",
+    "occupation": [
+      "Student"
+    ],
+    "min_age": null,
+    "max_age": null,
+    "income_limit": 250000,
+    "state": [
+      "All"
+    ],
+    "category": [
+      "SC",
+      "ST"
+    ],
+    "eligibility_criteria": [
+      "Indian national studying in India",
+      "Belongs to a Scheduled Caste or Scheduled Tribe",
+      "Parents' or guardians' annual income from all sources not more than ₹2.50 lakh",
+      "Has passed Matriculation or a higher examination and is pursuing a recognised post-matric or post-secondary course"
+    ],
+    "other_requirements": [
+      "You must have passed Matriculation (Class 10) or a higher examination and be pursuing a recognised post-matric course.",
+      "Full-time employees and part-time course students are not eligible.",
+      "You cannot hold another scholarship or stipend at the same time.",
+      "Class XI and XII students in continuous school courses are generally not eligible.",
+      "Students who received government-funded pre-examination coaching are not eligible."
+    ],
+    "documents": [
+      "Application form (separate forms for fresh and renewal applications)",
+      "Passport-size photo with the student's signature (fresh applicants)",
+      "Attested copies of all passed certificates, diplomas and degrees",
+      "Original caste certificate signed by a Revenue Officer not below the rank of Tehsildar",
+      "Income declaration: an affidavit on non-judicial stamp paper (self-employed parents), or an employer's income certificate plus an affidavit for other income (employed parents)",
+      "For renewals: the previous year's scholarship receipt countersigned by the Head of the Institution"
+    ],
+    "how_to_apply": [
+      "Apply online at the National Scholarship Portal (scholarships.gov.in).",
+      "The completed application goes to the Head of your institution, who forwards it to the officer designated by your home state.",
+      "Incomplete applications and applications received after the deadline are not considered."
+    ],
+    "notes": [
+      "The published guidelines show the ₹2.50 lakh income ceiling as last revised on 1 April 2013. News reports from March 2026 say the Ministry has proposed raising the SC limit to ₹4.5 lakh from a later year. We could not confirm that this has been approved, so check the current limit on the National Scholarship Portal.",
+      "These details come from a published copy of the central guidelines hosted by the Government of Meghalaya. The National Scholarship Portal is the final authority.",
+      "The ₹2.50 lakh parental income limit is confirmed for SC students by the Department of Social Justice and Empowerment's Year-End Review 2025, and for ST students by a Ministry of Tribal Affairs release of 15 March 2023.",
+      "The central approval described in our sources ran to 2025-26 and we found no later announcement, so please check the current terms on the National Scholarship Portal.",
+      "Some conditions listed under 'confirm yourself' (such as other scholarships and part-time courses) come from a state education department's page and not the central guidelines. Please confirm them on the National Scholarship Portal."
+    ],
+    "official_url": "https://scholarships.gov.in/",
+    "source_url": "https://www.pib.gov.in/PressReleseDetailm.aspx?PRID=2209488&reg=3&lang=2",
+    "source_name": "Press Information Bureau, Government of India (Department of Social Justice and Empowerment; Ministry of Tribal Affairs)",
+    "last_verified": "2026-10-28"
+  },
+  {
+    "id": 9,
+    "name": "PM SVANidhi (Street Vendor AtmaNirbhar Nidhi)",
+    "department": "Ministry of Housing & Urban Affairs",
+    "level": "Central",
+    "sector": "Livelihood & Credit",
+    "description": "Collateral-free working-capital loans for street vendors, with higher loan limits after timely repayment.",
+    "benefit": "Collateral-free loans in three tranches: up to ₹15,000, then up to ₹25,000, then up to ₹50,000, each unlocked by timely or early repayment of the previous one",
+    "occupation": [
+      "Self-employed"
+    ],
+    "min_age": null,
+    "max_age": null,
+    "income_limit": null,
+    "state": [
+      "All"
+    ],
+    "category": [
+      "All"
+    ],
+    "eligibility_criteria": [
+      "Street vendor engaged in vending articles, goods, wares, food items or merchandise of everyday use (Street Vendors Act, 2014)",
+      "Vends in a statutory town, census town or peri-urban area covered by the scheme",
+      "Holds a Certificate of Vending, Identity Card or Letter of Recommendation"
+    ],
+    "other_requirements": [
+      "You must be a street vendor (seasonal or year-round, mobile or stationary).",
+      "You need a Certificate of Vending, Identity Card or Letter of Recommendation from your Town Vending Committee or Urban Local Body (from the Block Development Office in census towns and peri-urban areas)."
+    ],
+    "documents": [
+      "Certificate of Vending, Identity Card or Letter of Recommendation (LoR)"
+    ],
+    "how_to_apply": [
+      "Get your Certificate of Vending, Identity Card or Letter of Recommendation from your Town Vending Committee or Urban Local Body. In census towns and peri-urban areas the Block Development Office issues the Letter of Recommendation, and verification should be completed within 15 days of your application.",
+      "In census towns and peri-urban areas the process runs through the PM SVANidhi portal. Once the Letter of Recommendation is issued, your application is sent to the bank.",
+      "Operational guidelines for availing loans are issued separately, so check the official portal for the current steps."
+    ],
+    "notes": [
+      "Loan limits are from the restructured scheme announced on 27 August 2025, and lending is extended to 31 March 2030. The first tranche is repayable in 12 months, the second in 18 months and the third in 36 months. There is no prepayment penalty."
+    ],
+    "official_url": "https://pmsvanidhi.mohua.gov.in/",
+    "source_url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2161157&reg=48&lang=2",
+    "source_name": "PIB Cabinet decision, 27 Aug 2025, and Ministry of Housing & Urban Affairs scheme guidelines",
+    "last_verified": "2026-10-27"
+  },
+  {
+    "level": "Central",
+    "occupation": [
+      "All"
+    ],
+    "state": [
+      "All"
+    ],
+    "category": [
+      "All"
+    ],
+    "min_age": 18,
+    "max_age": null,
+    "income_limit": null,
+    "documents": [
+      "Know Your Customer (KYC) application form",
+      "Aadhaar copy of the applicant as proof of identity",
+      "Proof of address, only if the address on Aadhaar differs from your current residence (migrants can use the self-declaration in Annexure I)",
+      "Ration card from the applying state, or another state government document showing family composition",
+      "Aadhaar copies of the applicant and the adult family members listed in that document",
+      "Bank account details (passbook copy or cancelled cheque)",
+      "Deprivation declaration"
+    ],
+    "how_to_apply": [
+      "Apply at the LPG distributor of your choice.",
+      "You can also apply online through the portal links for IOCL, BPCL and HPCL given on the official page."
+    ],
+    "notes": [
+      "For subsidy and benefit details, see the official FAQs or call the toll-free helpline 14428 or the Ujjwala helpline 14438."
+    ],
+    "last_verified": "2026-10-28",
+    "id": 10,
+    "name": "Pradhan Mantri Ujjwala Yojana (PMUY) - new LPG connection",
+    "department": "Ministry of Petroleum and Natural Gas",
+    "sector": "Energy & Household",
+    "description": "New LPG connections in the name of adult women from poor households.",
+    "benefit": "A new LPG connection for eligible poor households. Subsidy and connection-cost details are on the official PMUY page.",
+    "gender": [
+      "Female"
+    ],
+    "eligibility_criteria": [
+      "The applicant must be a woman who has attained 18 years of age",
+      "There should be no other LPG connection from any oil marketing company in the same household",
+      "The adult woman must belong to a poor household, based on a deprivation declaration"
+    ],
+    "other_requirements": [
+      "You must belong to a poor household, shown by a deprivation declaration. We cannot check this for you.",
+      "Your household must not already have an LPG connection from any oil marketing company."
+    ],
+    "official_url": "https://www.pmuy.gov.in/",
+    "source_url": "https://www.pmuy.gov.in/ujjwala2.html",
+    "source_name": "Pradhan Mantri Ujjwala Yojana official portal (Ministry of Petroleum and Natural Gas)"
+  },
+  {
+    "level": "Central",
+    "occupation": [
+      "All"
+    ],
+    "state": [
+      "All"
+    ],
+    "category": [
+      "All"
+    ],
+    "min_age": null,
+    "max_age": null,
+    "income_limit": null,
+    "documents": [
+      "Mother and Child Protection (MCP) card",
+      "Proof of eligibility (for example, a BPL card)",
+      "An Aadhaar-seeded bank or post office account for direct benefit transfer"
+    ],
+    "how_to_apply": [
+      "Enrol through the official PMMVY portal (pmmvy.wcd.gov.in).",
+      "You can also enrol through the UMANG platform (web.umang.gov.in).",
+      "For questions or complaints, call the toll-free helpline 14408."
+    ],
+    "notes": [
+      "The source does not give the instalment schedule. Check the official portal for when payments are made."
+    ],
+    "last_verified": "2026-10-28",
+    "id": 11,
+    "name": "Pradhan Mantri Matru Vandana Yojana (PMMVY)",
+    "department": "Ministry of Women and Child Development",
+    "sector": "Health & Maternity",
+    "description": "Cash support for pregnant and lactating women, to partly make up for wage loss around childbirth.",
+    "benefit": "₹5,000 for the first child and ₹6,000 for a second girl child (PMMVY 2.0)",
+    "gender": [
+      "Female"
+    ],
+    "eligibility_criteria": [
+      "Pregnant women and lactating mothers, especially from disadvantaged backgrounds",
+      "The benefit is for the first child; under PMMVY 2.0 it also covers a second living child if a girl"
+    ],
+    "other_requirements": [
+      "You must be pregnant or a lactating mother.",
+      "The benefit covers your first child, or a second child if she is a girl.",
+      "The official page we used does not list all exclusions or the age limit. Please check the full rules on the official PMMVY portal before applying."
+    ],
+    "official_url": "https://pmmvy.wcd.gov.in/",
+    "source_url": "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2025/aug/doc2025825619601.pdf",
+    "source_name": "Press Information Bureau, Government of India (Ministry of Women and Child Development)"
+  },
+  {
+    "level": "Central",
+    "occupation": [
+      "All"
+    ],
+    "state": [
+      "All"
+    ],
+    "category": [
+      "All"
+    ],
+    "min_age": 60,
+    "max_age": null,
+    "income_limit": null,
+    "documents": [],
+    "how_to_apply": [],
+    "notes": [
+      "States and Union Territories may add their own top-up to the central amount, so what you receive can be higher."
+    ],
+    "last_verified": "2026-10-28",
+    "id": 12,
+    "name": "Indira Gandhi National Old Age Pension Scheme (IGNOAPS)",
+    "department": "Ministry of Rural Development",
+    "sector": "Pension & Social Security",
+    "description": "Monthly pension for elderly people from families below the poverty line.",
+    "benefit": "Central pension of ₹200 per month (age 60 to 79) and ₹500 per month (age 80 and above). States may add to this.",
+    "bpl_required": true,
+    "eligibility_criteria": [
+      "Aged 60 years and above",
+      "Belongs to a family living below the poverty line"
+    ],
+    "other_requirements": [
+      "Your family must be below the poverty line (BPL). The source we used does not say how this is decided, so please confirm it on the official NSAP portal."
+    ],
+    "official_url": "https://nsap.nic.in/",
+    "source_url": "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2025/nov/doc2025117686801.pdf",
+    "source_name": "Press Information Bureau, Government of India (National Social Assistance Programme)"
+  },
+  {
+    "level": "Central",
+    "occupation": [
+      "All"
+    ],
+    "state": [
+      "All"
+    ],
+    "category": [
+      "All"
+    ],
+    "min_age": 40,
+    "max_age": 79,
+    "income_limit": null,
+    "documents": [],
+    "how_to_apply": [],
+    "notes": [
+      "The source lists a higher central amount (₹500) for age 80 and above under the old age pension scheme, not this one.",
+      "States and Union Territories may add their own top-up to the central amount."
+    ],
+    "last_verified": "2026-10-28",
+    "id": 13,
+    "name": "Indira Gandhi National Widow Pension Scheme (IGNWPS)",
+    "department": "Ministry of Rural Development",
+    "sector": "Pension & Social Security",
+    "description": "Monthly pension for widows from families below the poverty line.",
+    "benefit": "Central pension of ₹300 per month (age 40 to 79). States may add to this.",
+    "gender": [
+      "Female"
+    ],
+    "bpl_required": true,
+    "eligibility_criteria": [
+      "Widow aged between 40 and 79 years",
+      "Belongs to a family living below the poverty line, as identified by the Government of India"
+    ],
+    "other_requirements": [
+      "You must be a widow. We cannot check this for you.",
+      "Your family must be below the poverty line (BPL). The source we used does not say how this is decided, so please confirm it on the official NSAP portal."
+    ],
+    "official_url": "https://nsap.nic.in/",
+    "source_url": "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2025/nov/doc2025117686801.pdf",
+    "source_name": "Press Information Bureau, Government of India (National Social Assistance Programme)"
+  },
+  {
+    "level": "Central",
+    "occupation": [
+      "All"
+    ],
+    "state": [
+      "All"
+    ],
+    "category": [
+      "All"
+    ],
+    "min_age": 18,
+    "max_age": 79,
+    "income_limit": null,
+    "documents": [],
+    "how_to_apply": [],
+    "notes": [
+      "States and Union Territories may add their own top-up to the central amount."
+    ],
+    "last_verified": "2026-10-28",
+    "id": 14,
+    "name": "Indira Gandhi National Disability Pension Scheme (IGNDPS)",
+    "department": "Ministry of Rural Development",
+    "sector": "Pension & Social Security",
+    "description": "Monthly pension for people with severe or multiple disabilities from families below the poverty line.",
+    "benefit": "Central pension of ₹300 per month (age 18 to 79). States may add to this.",
+    "disability_required": true,
+    "bpl_required": true,
+    "eligibility_criteria": [
+      "Aged between 18 and 79 years",
+      "Has severe or multiple disabilities",
+      "Belongs to a family living below the poverty line"
+    ],
+    "other_requirements": [
+      "You must have severe or multiple disabilities. The source we used does not define this, so check the official NSAP guidelines and your disability certificate.",
+      "Your family must be below the poverty line (BPL). The source we used does not say how this is decided, so please confirm it on the official NSAP portal."
+    ],
+    "official_url": "https://nsap.nic.in/",
+    "source_url": "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2025/nov/doc2025117686801.pdf",
+    "source_name": "Press Information Bureau, Government of India (National Social Assistance Programme)"
+  },
+  {
+    "level": "Central",
+    "occupation": [
+      "All"
+    ],
+    "state": [
+      "All"
+    ],
+    "category": [
+      "All"
+    ],
+    "min_age": 18,
+    "max_age": null,
+    "income_limit": null,
+    "documents": [],
+    "how_to_apply": [
+      "Apply through the Stand-Up India portal (www.standupmitra.in), developed by SIDBI.",
+      "You can also apply directly at a branch of a scheduled commercial bank, or through the Lead District Manager."
+    ],
+    "notes": [
+      "The source says applicants must be 'above 18 years of age'. If you are exactly 18, confirm with your bank.",
+      "You must put in at least 10% of the project cost yourself. Margin money of up to 15% can come from eligible central or state schemes.",
+      "The Stand-Up India portal states the loan is repayable in 7 years, with a maximum moratorium of 18 months."
+    ],
+    "last_verified": "2026-10-28",
+    "id": 15,
+    "name": "Stand-Up India (bank loans for SC/ST and women entrepreneurs)",
+    "department": "Ministry of Finance (Department of Financial Services)",
+    "sector": "Livelihood & Credit",
+    "description": "Bank loans for SC/ST and/or women entrepreneurs setting up a first-time (greenfield) enterprise.",
+    "benefit": "A composite bank loan (term loan plus working capital) of ₹10 lakh to ₹1 crore, generally covering 85% of the project cost",
+    "any_of": [
+      {
+        "category": [
+          "SC",
+          "ST"
+        ]
+      },
+      {
+        "gender": [
+          "Female"
+        ]
+      }
+    ],
+    "eligibility_criteria": [
+      "SC/ST and/or woman entrepreneurs, above 18 years of age",
+      "Loans are available only for a greenfield project, meaning your first-time venture in manufacturing, services, agri-allied activities or trading",
+      "For a business that is not an individual, 51% of the shareholding and controlling stake must be held by SC/ST and/or women entrepreneurs",
+      "The borrower should not be in default to any bank or financial institution"
+    ],
+    "other_requirements": [
+      "You must be setting up a first-time (greenfield) business. We cannot check this for you.",
+      "You must not be in default to any bank or financial institution.",
+      "If the business is not an individual's, 51% of the shareholding and controlling stake must be held by SC/ST and/or women."
+    ],
+    "official_url": "https://www.standupmitra.in/",
+    "source_url": "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2022/apr/doc20224535601.pdf",
+    "source_name": "Press Information Bureau factsheet (Ministry of Finance), checked against the Stand-Up India portal"
+  },
+  {
+    "level": "Central",
+    "occupation": [
+      "All"
+    ],
+    "state": [
+      "All"
+    ],
+    "category": [
+      "All"
+    ],
+    "min_age": null,
+    "max_age": null,
+    "income_limit": null,
+    "documents": [],
+    "how_to_apply": [
+      "A parent or legal guardian can open it at any India Post office, any Public Sector Bank branch, or an authorised private bank (HDFC Bank, Axis Bank, ICICI Bank or IDBI Bank)."
+    ],
+    "notes": [
+      "Deposit: at least ₹250 in each financial year (the first deposit can be ₹250, later deposits in multiples of ₹50). The yearly maximum is ₹1,50,000; any excess earns no interest.",
+      "Deposits can be made for up to 15 years from opening. The account matures 21 years after it is opened.",
+      "The guardian manages the account until she turns 18, after which she can take control of it herself."
+    ],
+    "last_verified": "2026-10-28",
+    "id": 16,
+    "name": "Sukanya Samriddhi Yojana (savings account for a girl child)",
+    "department": "Ministry of Finance",
+    "sector": "Savings & Girl Child",
+    "description": "A government-backed savings account that a parent or guardian opens for a girl child.",
+    "benefit": "A savings account for your daughter, earning interest at a rate set by the government (the source we used states 8.2% a year; the rate is reviewed every quarter, so check the current rate)",
+    "girl_child_under_age": 10,
+    "eligibility_criteria": [
+      "Open to an Indian girl child",
+      "The account can be opened anytime from the birth of the girl child until she attains the age of 10 years",
+      "A parent or legal guardian opens and manages the account until she turns 18"
+    ],
+    "other_requirements": [
+      "The account is opened by a parent or legal guardian for a girl child under 10 years of age.",
+      "Check the official page for how many accounts one family may open."
+    ],
+    "official_url": "https://www.nsiindia.gov.in/InternalPage.aspx?Id_Pk=174",
+    "source_url": "https://www.pib.gov.in/PressReleseDetailm.aspx?PRID=2216748&reg=3&lang=2",
+    "source_name": "Press Information Bureau, Government of India (Ministry of Finance)"
+  },
+  {
+    "documents": [],
+    "how_to_apply": [
+      "The page we used does not describe the application steps. Please see the official Subhadra website."
+    ],
+    "notes": [
+      "Payments are made through the DBT (direct benefit transfer) system into the beneficiary's bank account."
+    ],
+    "last_verified": "2026-10-28",
+    "min_age": 21,
+    "max_age": 60,
+    "income_limit": null,
+    "occupation": [
+      "All"
+    ],
+    "state": [
+      "Odisha"
+    ],
+    "category": [
+      "All"
+    ],
+    "id": 17,
+    "level": "State",
+    "name": "Subhadra Yojana (Odisha)",
+    "department": "Government of Odisha (Women and Child Development)",
+    "sector": "Women's Welfare",
+    "description": "Cash assistance for eligible women of Odisha, paid directly into their bank accounts.",
+    "benefit": "₹50,000 over five years (₹10,000 a year, paid in two instalments on International Women's Day and Rakhi Purnima), paid into your Aadhaar-seeded bank account",
+    "gender": [
+      "Female"
+    ],
+    "eligibility_criteria": [
+      "Eligible women in the age group of 21 to 60 years",
+      "Financial assistance of ₹50,000 over a period of five years",
+      "Paid directly into Aadhaar-seeded and DBT-enabled bank accounts"
+    ],
+    "other_requirements": [
+      "The official page we used lists only the age group. There may be other conditions (for example on family income or other benefits), so please check the official Subhadra website before applying.",
+      "You need an Aadhaar-seeded, DBT-enabled bank account."
+    ],
+    "official_url": "https://subhadra.odisha.gov.in/",
+    "source_url": "https://wcd.odisha.gov.in/en/node/184943",
+    "source_name": "Women and Child Development Department, Government of Odisha"
+  },
+  {
+    "documents": [],
+    "how_to_apply": [
+      "The source we used does not describe how to apply. Please see the AICTE website."
+    ],
+    "notes": [
+      "Seats are limited: 10,000 scholarships a year are given across 23 States/UTs, split equally between diploma and degree students. All eligible girls from the remaining 13 States/UTs (including the North Eastern Region and Jammu & Kashmir) are covered.",
+      "Awards are reserved for ST (7.5%), SC (15%) and OBC (27%) candidates."
+    ],
+    "last_verified": "2026-10-28",
+    "min_age": null,
+    "max_age": null,
+    "income_limit": 799999,
+    "occupation": [
+      "Student"
+    ],
+    "state": [
+      "All"
+    ],
+    "category": [
+      "All"
+    ],
+    "id": 18,
+    "level": "Central",
+    "name": "AICTE Pragati Scholarship for Girl Students",
+    "department": "All India Council for Technical Education (AICTE), Ministry of Education",
+    "sector": "Education",
+    "description": "A scholarship to encourage girl students to pursue technical education.",
+    "benefit": "₹50,000 per year for selected students",
+    "gender": [
+      "Female"
+    ],
+    "eligibility_criteria": [
+      "Girl students in degree or diploma courses at AICTE-approved institutions",
+      "Admitted to the first year of a degree or diploma course, or to the second year through lateral entry",
+      "Maximum two girls per family",
+      "Total family income less than ₹8 lakh per annum"
+    ],
+    "other_requirements": [
+      "You must be admitted to the first year (or second year by lateral entry) of a degree or diploma course at an AICTE-approved institution.",
+      "At most two girls per family can receive the scholarship.",
+      "The source is a press release dated 8 December 2021, so the current terms may have changed. Please check the AICTE website."
+    ],
+    "official_url": "https://www.aicte-india.org/",
+    "source_url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=1779333",
+    "source_name": "Press Information Bureau, Government of India (Ministry of Education), 8 December 2021"
+  },
+  {
+    "level": "Central",
+    "occupation": [
+      "Farmer"
+    ],
+    "state": [
+      "All"
+    ],
+    "category": [
+      "All"
+    ],
+    "min_age": 18,
+    "max_age": 40,
+    "income_limit": null,
+    "documents": [],
+    "how_to_apply": [],
+    "notes": [
+      "The Centre contributes an equal amount to the pension fund, which LIC manages.",
+      "The source is a press release dated 4 February 2022, so the current terms may have changed."
+    ],
+    "last_verified": "2026-10-28",
+    "id": 19,
+    "name": "Pradhan Mantri Kisan Maandhan Yojana (PM-KMY)",
+    "department": "Ministry of Agriculture & Farmers Welfare",
+    "sector": "Pension & Social Security",
+    "description": "A voluntary, contributory pension scheme for small and marginal farmers.",
+    "benefit": "A minimum fixed pension of ₹3,000 a month from age 60. You pay a monthly contribution and the Centre adds an equal amount.",
+    "eligibility_criteria": [
+      "Small and marginal farmers",
+      "Entry age of 18 to 40 years",
+      "A voluntary and contributory pension scheme"
+    ],
+    "other_requirements": [
+      "You must be a small or marginal farmer. The release we used does not state the landholding limit or the exclusions (for example members of some other pension schemes), so please check the official PM-KMY website before applying.",
+      "You pay a monthly contribution to the pension fund. The release gives ₹100 a month only as an example for a member who joins at about age 29."
+    ],
+    "official_url": "https://pmkmy.gov.in/",
+    "source_url": "https://pib.gov.in/PressReleasePage.aspx?PRID=1795456",
+    "source_name": "Press Information Bureau, Government of India (Ministry of Agriculture & Farmers Welfare), 4 February 2022"
+  },
+  {
+    "level": "Central",
+    "occupation": [
+      "All"
+    ],
+    "state": [
+      "All"
+    ],
+    "category": [
+      "All"
+    ],
+    "min_age": 18,
+    "max_age": 40,
+    "income_limit": null,
+    "documents": [],
+    "how_to_apply": [
+      "The release we used does not explain how to enrol. Please see the official Ministry of Labour & Employment website."
+    ],
+    "notes": [
+      "The source does not state the exact monthly contribution amount. LIC is the fund manager."
+    ],
+    "last_verified": "2026-10-28",
+    "id": 20,
+    "name": "Pradhan Mantri Shram Yogi Maan-Dhan (PM-SYM)",
+    "department": "Ministry of Labour & Employment",
+    "sector": "Pension & Social Security",
+    "description": "A pension scheme for unorganised workers with a low monthly income.",
+    "benefit": "A monthly pension of ₹3,000 after age 60. You pay 50% of the monthly contribution and the Central Government pays the matching amount.",
+    "eligibility_criteria": [
+      "Workers in the age group of 18 to 40 years whose monthly income is ₹15,000 or less",
+      "Not a member of EPFO, ESIC or NPS (government funded)"
+    ],
+    "other_requirements": [
+      "You must be an unorganised worker. We cannot check this for you.",
+      "Your own monthly income must be ₹15,000 or less. (The form asks for annual family income, so we cannot check this for you.)",
+      "You must not be a member of EPFO, ESIC or NPS (government funded)."
+    ],
+    "official_url": "https://labour.gov.in/",
+    "source_url": "https://www.pib.gov.in/Pressreleaseshare.aspx?PRID=1909995",
+    "source_name": "Press Information Bureau, Government of India (Ministry of Labour & Employment)"
+  },
+  {
+    "level": "Central",
+    "occupation": [
+      "All"
+    ],
+    "state": [
+      "All"
+    ],
+    "category": [
+      "All"
+    ],
+    "min_age": 18,
+    "max_age": null,
+    "income_limit": null,
+    "documents": [],
+    "how_to_apply": [
+      "The release we used does not describe how to apply. Please see the official PMEGP portal."
+    ],
+    "notes": [
+      "General category: subsidy of 25% of the project cost in rural areas and 15% in urban areas; you put in 10% of the project cost yourself.",
+      "Special categories (SC, ST, OBC, minorities, women, ex-servicemen, differently abled, transgender, and applicants from the North-Eastern Region, hill and border areas or aspirational districts): subsidy of 35% in rural areas and 25% in urban areas; you put in 5% yourself.",
+      "The source says 'above 18 years of age'. If you are exactly 18, please confirm with the PMEGP office."
+    ],
+    "last_verified": "2026-10-28",
+    "id": 21,
+    "name": "Prime Minister's Employment Generation Programme (PMEGP)",
+    "department": "Ministry of Micro, Small and Medium Enterprises",
+    "sector": "Livelihood & Credit",
+    "description": "A credit-linked subsidy for setting up micro-enterprises.",
+    "benefit": "A margin money subsidy of 15% to 35% of the project cost, for projects up to ₹50 lakh in manufacturing and ₹20 lakh in services",
+    "eligibility_criteria": [
+      "Any individual above 18 years of age",
+      "The maximum project cost is ₹50 lakh in manufacturing and ₹20 lakh in services"
+    ],
+    "other_requirements": [
+      "The release we used does not list other conditions (for example education requirements for larger projects, or whether you already run a unit). Please check the official PMEGP guidelines before applying."
+    ],
+    "official_url": "https://pmegp.msme.gov.in/Home/Index",
+    "source_url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2036994",
+    "source_name": "Press Information Bureau, Government of India (Ministry of MSME), 25 July 2024"
+  },
+  {
+    "level": "Central",
+    "occupation": [
+      "All"
+    ],
+    "state": [
+      "All"
+    ],
+    "category": [
+      "All"
+    ],
+    "min_age": null,
+    "max_age": null,
+    "income_limit": null,
+    "documents": [],
+    "how_to_apply": [
+      "You can get loan support from banks, NBFCs and microfinance institutions (MFIs). The release we used does not describe the steps."
+    ],
+    "notes": [
+      "Interest rates are set under RBI guidelines and repayment terms are flexible."
+    ],
+    "last_verified": "2026-10-28",
+    "id": 22,
+    "name": "Pradhan Mantri Mudra Yojana (PMMY)",
+    "department": "Ministry of Finance",
+    "sector": "Livelihood & Credit",
+    "description": "Collateral-free loans for small and micro businesses.",
+    "benefit": "Collateral-free loans up to ₹20 lakh: Shishu (up to ₹50,000), Kishor (above ₹50,000 up to ₹5 lakh), Tarun (above ₹5 lakh up to ₹10 lakh) and TarunPlus (above ₹10 lakh up to ₹20 lakh)",
+    "eligibility_criteria": [
+      "Small or micro entrepreneurs in non-corporate, non-farm income-generating activities",
+      "Covers manufacturing, trading and services, and farm-allied activities such as poultry, dairy and beekeeping"
+    ],
+    "other_requirements": [
+      "The loan must be for a business: a non-corporate, non-farm income-generating activity, or a farm-allied one such as dairy or poultry. We cannot check this for you.",
+      "The release we used does not list age, income or documents. Please ask a bank, NBFC or microfinance institution and check the official Mudra information."
+    ],
+    "official_url": "https://www.financialservices.gov.in/pradhan-mantri-mudra-yojana-pmmy",
+    "source_url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2249915&reg=3&lang=1",
+    "source_name": "Press Information Bureau, Government of India (Ministry of Finance)"
+  },
+  {
+    "level": "Central",
+    "occupation": [
+      "Self-employed",
+      "Other"
+    ],
+    "state": [
+      "All"
+    ],
+    "category": [
+      "All"
+    ],
+    "min_age": 18,
+    "max_age": null,
+    "income_limit": null,
+    "documents": [],
+    "how_to_apply": [
+      "Registration is through Common Service Centres, with Aadhaar-based biometric authentication on the PM Vishwakarma portal."
+    ],
+    "notes": [
+      "Credit: the first tranche is up to ₹1 lakh for 18 months (after basic training); the second is up to ₹2 lakh for 30 months. The government bears an 8% interest subvention.",
+      "Training: basic training of 5 to 7 days and advanced training of 15 days or more.",
+      "Digital incentive: ₹1 per digital transaction, up to 100 transactions a month."
+    ],
+    "last_verified": "2026-10-28",
+    "id": 23,
+    "name": "PM Vishwakarma",
+    "department": "Ministry of Micro, Small and Medium Enterprises",
+    "sector": "Livelihood & Credit",
+    "description": "Support for traditional artisans and craftspeople in 18 trades.",
+    "benefit": "A certificate and ID card, skill training with a ₹500-a-day stipend, a toolkit incentive of up to ₹15,000, and collateral-free loans of up to ₹3 lakh (₹1 lakh, then ₹2 lakh) at 5% interest",
+    "eligibility_criteria": [
+      "Aged 18 years or above",
+      "A hands-on artisan or craftsperson working independently in the unorganised sector in one of 18 trades: Carpenter, Boat Maker, Armourer, Metalsmith, Hammer and Tool Kit Maker, Locksmith, Goldsmith, Potter, Sculptor/Stone Breaker, Cobbler/Shoesmith/Footwear Artisan, Mason, Basket/Mat/Broom Maker/Coir Weaver, Doll and Toy Maker, Barber, Garland Maker, Washerman, Tailor, Fishing Net Maker",
+      "Registration and benefits are limited to one member of a family"
+    ],
+    "other_requirements": [
+      "You must work with your hands and tools in one of the 18 listed trades. We cannot check this for you.",
+      "You should not have taken loans under similar government self-employment or business schemes in the last five years. Borrowers who have fully repaid MUDRA or PM SVANidhi loans are eligible.",
+      "Only one member of a family (husband, wife and unmarried children) can register.",
+      "People in government service, and their family members, are not eligible."
+    ],
+    "official_url": "https://pmvishwakarma.gov.in/",
+    "source_url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2310717&reg=48&lang=2",
+    "source_name": "Press Information Bureau, Government of India (Ministry of MSME)"
+  },
+  {
+    "level": "Central",
+    "occupation": [
+      "Student"
+    ],
+    "state": [
+      "All"
+    ],
+    "category": [
+      "All"
+    ],
+    "min_age": null,
+    "max_age": null,
+    "income_limit": 450000,
+    "documents": [
+      "Bank passbook in your name",
+      "Aadhaar",
+      "Parental income certificate",
+      "A valid mobile number and email",
+      "Caste and disability certificates, where applicable"
+    ],
+    "how_to_apply": [
+      "Apply online on the National Scholarship Portal (scholarships.gov.in): choose Post-Matric, then the CSSS scheme.",
+      "Applications sent directly to the Ministry are not accepted.",
+      "Choose your institute by its AISHE code. A wrong choice cannot be corrected later."
+    ],
+    "notes": [
+      "The source is an FAQ on the National Scholarship Portal that mentions 2021-22 rates, so amounts and dates may have been revised. Please check the portal.",
+      "The source does not say whether only one scholarship is given per family."
+    ],
+    "last_verified": "2026-10-28",
+    "id": 24,
+    "name": "Central Sector Scholarship for College and University Students (PM-USP CSSS)",
+    "department": "Department of Higher Education, Ministry of Education",
+    "sector": "Education",
+    "description": "A merit scholarship for students in regular degree courses whose family income is within the limit.",
+    "benefit": "₹12,000 a year for the first three years of a degree and ₹20,000 a year for post-graduation (and for the final years of some courses)",
+    "eligibility_criteria": [
+      "Above the 80th percentile of successful candidates in the relevant stream from your Board in Class XII",
+      "Pursuing a regular degree course (not correspondence, distance mode or a diploma)",
+      "In a college recognised by AICTE and the relevant regulatory bodies",
+      "Gross parental or family income up to ₹4.5 lakh per annum"
+    ],
+    "other_requirements": [
+      "You need to be above the 80th percentile in your stream in your Board's Class XII results. We cannot check this for you.",
+      "You must be in a regular degree course at a recognised college, not a diploma, distance or correspondence course.",
+      "You must not be getting any other scholarship, including state scholarships or fee waiver and reimbursement schemes.",
+      "To renew each year you need at least 50% marks in the annual examination and at least 75% attendance."
+    ],
+    "official_url": "https://scholarships.gov.in/",
+    "source_url": "https://scholarships.gov.in/public/schemeGuidelines/FAQ_DOHE_CSSS.pdf",
+    "source_name": "National Scholarship Portal, Ministry of Education (CSSS guidelines and FAQ)"
   }
 ]

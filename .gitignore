@@ -18,3 +18,14 @@ frontend/out/
 # OS
 .DS_Store
 Thumbs.db
+
+
+# Python virtual environment
+.venv/
+venv/
+
+# Python bytecode
+*.py[cod]
+
+# Dependencies
+node_modules/
