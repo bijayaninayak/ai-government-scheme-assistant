@@ -1,0 +1,10 @@
+{
+  "description": "Discover eligible government schemes tailored for Indian citizens by entering personal details, with AI providing personalized recommendations and application guidance.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
