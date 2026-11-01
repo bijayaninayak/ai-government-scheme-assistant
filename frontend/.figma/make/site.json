@@ -1,0 +1,11 @@
+{
+  "title": "Government Scheme Eligibility Assistant",
+  "description": "Find the government schemes you may be eligible for by entering a few personal details. Every result explains why, with a link to the official source.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
